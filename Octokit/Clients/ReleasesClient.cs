@@ -37,7 +37,7 @@ namespace Octokit
             Ensure.ArgumentNotNullOrEmptyString(name, "repository");
 
             var endpoint = ApiUrls.Releases(owner, name);
-            return ApiConnection.GetAll<Release>(endpoint, null, "application/vnd.github.v3");
+            return ApiConnection.GetAll<Release>(endpoint, null, "application/vnd.github.v3.html+json");
         }
 
         /// <summary>

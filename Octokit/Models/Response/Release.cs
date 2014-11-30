@@ -16,6 +16,7 @@ namespace Octokit
         public string TargetCommitish { get; set; }
         public string Name { get; set; }
         public string Body { get; set; }
+        public string BodyHtml { get; set; }
         public bool Draft { get; set; }
         public bool Prerelease { get; set; }
         public DateTimeOffset CreatedAt { get; set; }
